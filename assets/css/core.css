@@ -1,0 +1,74 @@
+:root {
+    --white-color: #fff;
+    --unactive-btn-color: #AFAFAF;
+    --black-color: #000;
+    --primary-color: #222;
+    --title-text-color: #484848;
+    --icon-color: #717171;
+    --border-color: #DDD;
+    --hover-item-color: #f7f7f7;
+    --shadow-color: rgba(74, 74, 74, 0.8);
+    --overlay-color: rgba(34, 34, 34, 0.45);
+    --transparent-color: transparent;
+    --sub-text-color: #969696;
+    --gradion-color: linear-gradient(to right, #E51E4E, #D70566);
+    --border-radius-default: 8px;
+    --page-shell-max-content-width: 1760px !important;
+    --gradion-text-color: linear-gradient(45deg, #71019B, #AE0187);
+    --border-radius--32: 32px;
+    --background-color: #EBEBEB;
+    --hover-item-background-color: rgba(97, 97, 97, 0.33);
+    --active-btn-background-color: #EFEFEF;
+    --header-brand-color: #FF385C;
+    --border-radius-16: 16px;
+    --underline-hover-color: #9e9e9e;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 12px;
+    background: rgb(240, 236, 236);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 12px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+@keyframes opacity-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes fadeOutLeft {
+    0% {
+        zoom: 1;
+        -webkit-transform: translate(0);
+    }
+    100% {
+        zoom: 0.6;
+        -webkit-transform: translate(-42px, -30px);
+    }
+}

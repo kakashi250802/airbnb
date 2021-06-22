@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/font/Circular-Std-Font/Circular Std Font.otf">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide header__grid  ">
+                <div class="padding-space"></div>
+                <div class=" header__bar">
+                    <div class="header__logo">
+                        <div class="header__logo__pc">
+                            <a href="" class="header__logo__pc--link"><svg width="102" height="32" fill="currentcolor"
+                                    style="display: block;">
+                                    <path
+                                        d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5zM41.54 24.12a5.02 5.02 0 01-3.95-1.83 6.55 6.55 0 01-1.6-4.48 6.96 6.96 0 011.66-4.58 5.3 5.3 0 014.08-1.86 4.3 4.3 0 013.7 1.92l.1-1.57h2.92V23.8h-2.93l-.1-1.76a4.52 4.52 0 01-3.88 2.08zm.76-2.88c.58 0 1.09-.16 1.57-.45.44-.32.8-.74 1.08-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.55.45zM53.45 8.46c0 .35-.06.67-.22.93-.16.25-.38.48-.67.64-.29.16-.6.22-.92.22-.32 0-.64-.06-.93-.22a1.84 1.84 0 01-.67-.64 1.82 1.82 0 01-.22-.93c0-.36.07-.68.22-.93.16-.3.39-.48.67-.64.29-.16.6-.23.93-.23a1.84 1.84 0 011.6.86 2 2 0 01.21.94zm-3.4 15.3V11.7h3.18v12.08h-3.19zm11.68-8.9v.04c-.15-.07-.35-.1-.5-.13-.2-.04-.36-.04-.55-.04-.89 0-1.56.26-2 .8-.48.55-.7 1.32-.7 2.31v5.93h-3.19V11.69h2.93l.1 1.83c.32-.64.7-1.12 1.24-1.48a3.1 3.1 0 011.81-.5c.23 0 .45.02.64.06.1.03.16.03.22.06v3.2zm1.28 8.9V6.74h3.18v6.5c.45-.58.96-1.03 1.6-1.38a5.02 5.02 0 016.08 1.31 6.55 6.55 0 011.6 4.49 6.96 6.96 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.1 1.57-2.92.03zm6.15-2.52c.57 0 1.08-.16 1.56-.45.44-.32.8-.74 1.08-1.25.26-.51.38-1.12.38-1.8 0-.67-.12-1.28-.38-1.79a3.75 3.75 0 00-1.08-1.25 2.95 2.95 0 00-3.12 0c-.45.32-.8.74-1.09 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.56.45zm7.51 2.53V11.69h2.93l.1 1.57a3.96 3.96 0 013.54-1.89 4.1 4.1 0 013.82 2.44c.35.76.54 1.7.54 2.75v7.24h-3.19v-6.82c0-.84-.19-1.5-.57-1.99-.38-.48-.9-.74-1.56-.74-.48 0-.9.1-1.27.32-.35.23-.64.52-.86.93a2.7 2.7 0 00-.32 1.35v6.92h-3.16zm12.52 0V6.73h3.19v6.5a4.67 4.67 0 013.73-1.89 5.02 5.02 0 013.95 1.83 6.57 6.57 0 011.59 4.48 6.95 6.95 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.09 1.57-2.93.03zm6.18-2.53c.58 0 1.09-.16 1.56-.45.45-.32.8-.74 1.09-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a3.63 3.63 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.95.45 1.55.45z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="header-subsearch">
+                        <p class="header-subsearch__text">Bắt đầu tìm kiếm</p>
+                        <i class="ti-search header-subsearch__icon"></i>
+                    </div>
+                    <div class="header__subnav">
+                        <span class="header__subnav-item--active header__subnav-item ">
+                            <a href="" class="header__subnav-item--link">Nơi ở</a></span>
+                        <span class="header__subnav-item">
+                            <a href="" class="header__subnav-item--link">Trải nghiệm</a></span>
+                        <span class="header__subnav-item">
+                            <a href="" class="header__subnav-item--link">Trải nghiệm trực tuyến</a>
+                        </span>
+                        <div class="header-search__nav">
+                            <label for="header-search__location--checkbox" class="header-search__item ">
+                                <div class="header-search__content">
+                                    <span class="header-search__title">Địa điểm</span>
+                                    <span class="header-search__inf">Bạn Sắp đi đâu</span>
+                                </div>
+                                <div class="select-item"></div>
+                            </label>
+                            <input type="checkbox" hidden name="" id="header-search__location--checkbox" class="header-search__location--checkbox ">
+                            <label for="header-search__calender--checkbox" id="search-item__2" class="header-search__item header-search__item--setwidth">
+                                <div class="header-search__content">
+                                    <span class="header-search__title">Nhận phòng</span>
+                                    <span class="header-search__inf">Thêm ngày</span>
+                                </div>
+                                <div class="select-item"></div>
+                                <div class="hidden-before"></div>
+                            </label>
+                            <input type="checkbox" name="" hidden id="header-search__calender--checkbox" class="header-search__calender--checkbox">
+                            <label for="header-search__calender--checkbox" class="header-search__item header-search__item--setwidth">
+                                <div class="header-search__content">
+
+                                    <span class="header-search__title">Trả phòng</span>
+                                    <span class="header-search__inf">Thêm ngày</span>
+                                </div>
+                                <div class="select-item"></div>
+                            </label>
+                            <div class="header-search-calendar">
+                                <div class="header-search-calendar__heading">
+                                    <button class="btn header-search-calendar__heading--item header-search-calendar__heading--item--active">Lịch</button>
+                                    <button class="btn header-search-calendar__heading--item">Ngày sinh hoạt</button>
+                                </div>
+
+                                <div class="header-search-calendar__icon">
+                                    <i class="header-search-calendar__icon-btn ti-angle-left"></i>
+                                    <i class="header-search-calendar__icon-btn ti-angle-right"></i>
+                                </div>
+                                <div class="header-search-calendar__body">
+                                    <div class="header-search-calendar__item">
+                                        <div class="header-search-calendar__item--title">
+                                            <p class="header-search-calendar__item--month">tháng 6 năm 2021</p>
+                                        </div>
+                                        <div class="header-search-calendar__item--week">
+
+                                            <ul class="header-search-calendar__item--weekend">
+                                                <li class="header-search-calendar__item--weekend-day">T2</li>
+                                                <li class="header-search-calendar__item--weekend-day">T3</li>
+                                                <li class="header-search-calendar__item--weekend-day">T4</li>
+                                                <li class="header-search-calendar__item--weekend-day">T5</li>
+                                                <li class="header-search-calendar__item--weekend-day">T6</li>
+                                                <li class="header-search-calendar__item--weekend-day">T7</li>
+                                                <li class="header-search-calendar__item--weekend-day">CN</li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-search-calendar__item--day">
+                                            <ul class="header-search-calendar__item--day-list">
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--empty">
+                                                </li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    1</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    2</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    3</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    4</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    5</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    6</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    7</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    8</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    9</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    10</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    11</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    12</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    13</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    14</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    15</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    16</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    17</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    18</li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--unactive">
+                                                    19</li>
+                                                <li class="header-search-calendar__item--daymonth">20</li>
+                                                <li class="header-search-calendar__item--daymonth">21</li>
+                                                <li class="header-search-calendar__item--daymonth">22</li>
+                                                <li class="header-search-calendar__item--daymonth">23</li>
+                                                <li class="header-search-calendar__item--daymonth">24</li>
+                                                <li class="header-search-calendar__item--daymonth">25</li>
+                                                <li class="header-search-calendar__item--daymonth">26</li>
+                                                <li class="header-search-calendar__item--daymonth">27</li>
+                                                <li class="header-search-calendar__item--daymonth">28</li>
+                                                <li class="header-search-calendar__item--daymonth">29</li>
+                                                <li class="header-search-calendar__item--daymonth">30</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="header-search-calendar__item">
+                                        <div class="header-search-calendar__item--title">
+                                            <p class="header-search-calendar__item--month">tháng 7 năm 2021</p>
+                                        </div>
+                                        <div class="header-search-calendar__item--week">
+
+                                            <ul class="header-search-calendar__item--weekend">
+                                                <li class="header-search-calendar__item--weekend-day">T2</li>
+                                                <li class="header-search-calendar__item--weekend-day">T3</li>
+                                                <li class="header-search-calendar__item--weekend-day">T4</li>
+                                                <li class="header-search-calendar__item--weekend-day">T5</li>
+                                                <li class="header-search-calendar__item--weekend-day">T6</li>
+                                                <li class="header-search-calendar__item--weekend-day">T7</li>
+                                                <li class="header-search-calendar__item--weekend-day">CN</li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-search-calendar__item--day">
+                                            <ul class="header-search-calendar__item--day-list">
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--empty">
+                                                </li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--empty">
+                                                </li>
+                                                <li class="header-search-calendar__item--daymonth header-search-calendar__item--daymonth--empty">
+                                                </li>
+                                                <li class="header-search-calendar__item--daymonth">1</li>
+                                                <li class="header-search-calendar__item--daymonth">2</li>
+                                                <li class="header-search-calendar__item--daymonth">3</li>
+                                                <li class="header-search-calendar__item--daymonth">4</li>
+                                                <li class="header-search-calendar__item--daymonth">5</li>
+                                                <li class="header-search-calendar__item--daymonth">6</li>
+                                                <li class="header-search-calendar__item--daymonth">7</li>
+                                                <li class="header-search-calendar__item--daymonth">8</li>
+                                                <li class="header-search-calendar__item--daymonth">9</li>
+                                                <li class="header-search-calendar__item--daymonth">10</li>
+                                                <li class="header-search-calendar__item--daymonth">11</li>
+                                                <li class="header-search-calendar__item--daymonth">12</li>
+                                                <li class="header-search-calendar__item--daymonth">13</li>
+                                                <li class="header-search-calendar__item--daymonth">14</li>
+                                                <li class="header-search-calendar__item--daymonth">15</li>
+                                                <li class="header-search-calendar__item--daymonth">16</li>
+                                                <li class="header-search-calendar__item--daymonth">17</li>
+                                                <li class="header-search-calendar__item--daymonth">18</li>
+                                                <li class="header-search-calendar__item--daymonth">19</li>
+                                                <li class="header-search-calendar__item--daymonth">20</li>
+                                                <li class="header-search-calendar__item--daymonth">21</li>
+                                                <li class="header-search-calendar__item--daymonth">22</li>
+                                                <li class="header-search-calendar__item--daymonth">23</li>
+                                                <li class="header-search-calendar__item--daymonth">24</li>
+                                                <li class="header-search-calendar__item--daymonth">25</li>
+                                                <li class="header-search-calendar__item--daymonth">26</li>
+                                                <li class="header-search-calendar__item--daymonth">27</li>
+                                                <li class="header-search-calendar__item--daymonth">28</li>
+                                                <li class="header-search-calendar__item--daymonth">29</li>
+                                                <li class="header-search-calendar__item--daymonth">30</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="header-search-calendar__body header-search-calendar__body-item2">
+                                    <div class="header-search-calendar__timelive">
+                                        <h4 class="header-search-calendar__timelive--question">
+                                            Bạn muốn ở trong bao lâu?
+                                        </h4>
+                                        <div class="header-search__calendar__ans">
+                                            <button class="header-search-calendar__timelive--btn header-search-calendar__timelive--active btn">Cuối
+                                                tuần</button>
+                                            <button class="header-search-calendar__timelive--btn btn ">1 tuần</button>
+                                            <button class="header-search-calendar__timelive--btn btn ">1 tháng</button>
+                                        </div>
+                                    </div>
+                                    <div class="header-search-calendar__timelive">
+                                        <h4 class="header-search-calendar__timelive--question">
+                                            Bạn muốn đi khi nào?
+                                        </h4>
+                                        <div class="header-search__calendar__ans">
+
+                                            <div class="header-search-calendar__timelive--btn btn header-search-calendar__timelive--selectedmonth  header-search-calendar__timelive--active btn">
+                                                <img src="./assets/img/calendar-month.jpg" alt="" class="header-search-calendar__timelive--img">
+                                                <p class="header-search-calendar__timelive--month">Tháng 6</p>
+                                            </div>
+                                            <div class="header-search-calendar__timelive--btn btn header-search-calendar__timelive--selectedmonth">
+                                                <img src="./assets/img/calendar-month-unactive.jpg" alt="" class="header-search-calendar__timelive--img">
+                                                <p class="header-search-calendar__timelive--month">Tháng 7</p>
+                                            </div>
+                                            <div class="header-search-calendar__timelive--btn btn header-search-calendar__timelive--selectedmonth">
+                                                <img src="./assets/img/calendar-month-unactive.jpg" alt="" class="header-search-calendar__timelive--img">
+                                                <p class="header-search-calendar__timelive--month">Tháng 8</p>
+                                            </div>
+                                            <div class="header-search-calendar__timelive--btn btn header-search-calendar__timelive--selectedmonth">
+                                                <img src="./assets/img/calendar-month-unactive.jpg" alt="" class="header-search-calendar__timelive--img">
+                                                <p class="header-search-calendar__timelive--month">Tháng 9</p>
+                                            </div>
+                                            <div class="header-search-calendar__timelive--btn btn header-search-calendar__timelive--selectedmonth">
+                                                <img src="./assets/img/calendar-month-unactive.jpg" alt="" class="header-search-calendar__timelive--img">
+                                                <p class="header-search-calendar__timelive--month">Tháng 10</p>
+                                            </div>
+                                            <div class="header-search-calendar__timelive--btn btn header-search-calendar__timelive--selectedmonth">
+                                                <img src="./assets/img/calendar-month-unactive.jpg" alt="" class="header-search-calendar__timelive--img">
+                                                <p class="header-search-calendar__timelive--month">Tháng 11</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="checkbox" name="" id="header-search__customer--checkbox" hidden class="header-search__customer--checkbox">
+
+                            <label for="header-search__customer--checkbox" class="header-search__item">
+                                <div class="header-search__content">
+                                    <span class="header-search__title">Khách</span>
+                                    <span class="header-search__inf">Thêm khách</span>
+                                </div>
+
+                                <div class="header-search__btn">
+                                    <label for="header-search__checkbox">
+                                        <i class="ti-search"></i>
+                                    </label>
+                            <input type="checkbox" hidden name="" id="header-search__checkbox" class="header-search__showtext">
+                            <p class="header-search__btn--text">Tìm kiếm</p>
+                        </div>
+                        <!-- <div class="select-item">
+                                    </div> -->
+                        </label>
+                        <div class="header-search-customer">
+                            <div class="header-search-customer__item">
+                                <div class="header-search-customer__type">
+                                    <h3 class="header-search-customer__type-title">Người lớn</h3>
+                                    <p class="header-search-customer__dedail">Từ 13 tuổi trở lên</p>
+                                </div>
+                                <div class="header-search-customer__amount">
+                                    <i class="header-search-customer__amount--decrease header-search-customer__amount--decrease-maximun ti-minus"></i>
+                                    <div class="header-search-customer__amount--dedail">0</div>
+                                    <i class="header-search-customer__amount--increase ti-plus"></i>
+                                </div>
+                            </div>
+                            <div class="header-search-customer__item">
+                                <div class="header-search-customer__type">
+                                    <h3 class="header-search-customer__type-title">Trẻ em</h3>
+                                    <p class="header-search-customer__dedail">Độ tuổi từ 2 đên 12</p>
+                                </div>
+                                <div class="header-search-customer__amount">
+                                    <i class="header-search-customer__amount--decrease  ti-minus"></i>
+                                    <div class="header-search-customer__amount--dedail">5</div>
+                                    <i class="header-search-customer__amount--increase header-search-customer__amount--decrease-maximun ti-plus"></i>
+                                </div>
+                            </div>
+                            <div class="header-search-customer__item">
+                                <div class="header-search-customer__type">
+                                    <h3 class="header-search-customer__type-title">Em bé</h3>
+                                    <p class="header-search-customer__dedail">Dưới 2</p>
+                                </div>
+                                <div class="header-search-customer__amount">
+                                    <i class="header-search-customer__amount--decrease ti-minus"></i>
+                                    <div class="header-search-customer__amount--dedail">3</div>
+                                    <i class="header-search-customer__amount--increase ti-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-search__location">
+                            <h4 class="header-search__location--heading">Mọi lúc, mọi nơi</h4>
+                            <div class="header-search__location--body">
+                                <a href="" class="header-search__location--link">
+                                    <p class="header-search__location-desc">Tìm kiếm linh hoạt</p>
+                                    <img src="assets/img/location--icon.jpg" alt="" class="header-search__location-item">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <a href="" class="header__nav-item">Trở thành chủ nhà</a>
+                    <a class="header__nav-item"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" role="presentation" focusable="false"
+                                style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                <path
+                                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                                </path>
+                            </svg></a>
+                    <label for="header-account__checkbox" class="header__category">
+                            <label for="header-account__checkbox" href="" class="header__category-item"><svg
+                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    role="presentation" focusable="false"
+                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                    <g fill="none" fill-rule="nonzero">
+                                        <path d="m2 16h28"></path>
+                                        <path d="m2 24h28"></path>
+                                        <path d="m2 8h28"></path>
+                                    </g>
+                                </svg></label>
+                    <label for="header-account__checkbox" href="" class="header__category-item"><svg
+                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                    role="presentation" focusable="false"
+                                    style="display: block; height: 100%; width: 100%; fill: currentcolor;">
+                                    <path
+                                        d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z">
+                                    </path>
+                                </svg></label>
+                    </label>
+                    <input type="checkbox" hidden name="" id="header-account__checkbox" class="header-account-checkbox">
+                    <div class="header-account-option">
+                        <ul class="header-account-option__list">
+                            <li class="header-account-option__item"><a class="header-account-option__link">Đăng
+                                        Ký</a></li>
+                            <li class="header-account-option__item"><a class="header-account-option__link">Đăng
+                                        nhập</a></li>
+                            <li class="header-account-option__item"><a href="" class="header-account-option__link">Cho thuê nhà</a></li>
+                            <li class="header-account-option__item"><a href="" class="header-account-option__link">Tổ chức trải nhiệm</a></li>
+                            <li class="header-account-option__item"><a href="" class="header-account-option__link">Trợ Giúp</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+    <div class="header--content__main">
+        <h3 class="header--content__main--title">Bạn chưa biết nên đi đâu? Tuyệt!</h3>
+        <div class="header-search__location--body header-content__body--btn">
+            <a href="" class="header-search__location--link header-search__location--link-main ">
+                <p class="header-search__location-desc header-search__location-desc--main">Tìm kiếm linh hoạt
+                </p>
+            </a>
+        </div>
+    </div>
+    </header>
+    <div class="app__container">
+        <div class="home-product">
+            <div class="grid wide">
+                <div class="home-product-item">
+                    <h3 class="home-product-item__heading">Khám phá những điểm đến gần đây</h3>
+                    <p class="home-product-item__text"></p>
+                    <div class="home-product-item__body row">
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__place-link">
+
+                                <div class="home-product-item__place--img">
+                                    <img src="./assets/img/near__place-item-1.webp" alt="" class="home-product-item__place--pic">
+                                </div>
+                                <div class="home-product-item__place--dedail">
+                                    <p class="home-product-item__place--text">Đà Nẵng</p>
+                                    <p class="home-product-item__place--subtext">6,5 giờ lái xe</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__place-link">
+
+                                <div class="home-product-item__place--img">
+                                    <img src="./assets/img/near__place-item-3.webp" alt="" class="home-product-item__place--pic">
+                                </div>
+                                <div class="home-product-item__place--dedail">
+                                    <p class="home-product-item__place--text">Hà Nội</p>
+                                    <p class="home-product-item__place--subtext">4 giờ lái xe</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__place-link">
+
+                                <div class="home-product-item__place--img">
+                                    <img src="./assets/img/near__place-item-2.webp" alt="" class="home-product-item__place--pic">
+                                </div>
+                                <div class="home-product-item__place--dedail">
+                                    <p class="home-product-item__place--text">Thành phố Hội An</p>
+                                    <p class="home-product-item__place--subtext">6,5 giờ lái xe</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__place-link">
+
+                                <div class="home-product-item__place--img">
+                                    <img src="./assets/img/near__place-item-4.webp" alt="" class="home-product-item__place--pic">
+                                </div>
+                                <div class="home-product-item__place--dedail">
+                                    <p class="home-product-item__place--text">Thành phố Ninh Bình</p>
+                                    <p class="home-product-item__place--subtext">2,5 giờ lái xe</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__place-link">
+
+                                <div class="home-product-item__place--img">
+                                    <img src="./assets/img/near__place-item-5.webp" alt="" class="home-product-item__place--pic">
+                                </div>
+                                <div class="home-product-item__place--dedail">
+                                    <p class="home-product-item__place--text">Hải Phòng</p>
+                                    <p class="home-product-item__place--subtext">4 giờ lái xe</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__place-link">
+
+                                <div class="home-product-item__place--img">
+                                    <img src="./assets/img/near__place-item-6.webp" alt="" class="home-product-item__place--pic">
+                                </div>
+                                <div class="home-product-item__place--dedail">
+                                    <p class="home-product-item__place--text">Thành phố Móng Cái</p>
+                                    <p class="home-product-item__place--subtext">7,5 giờ lái xe</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__place-link">
+
+                                <div class="home-product-item__place--img">
+                                    <img src="./assets/img/near__place-item-7.webp" alt="" class="home-product-item__place--pic">
+                                </div>
+                                <div class="home-product-item__place--dedail">
+                                    <p class="home-product-item__place--text">Thành phố Đồng Hới</p>
+                                    <p class="home-product-item__place--subtext">2,5 giờ lái xe</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__place-link">
+
+                                <div class="home-product-item__place--img">
+                                    <img src="./assets/img/near__place-item-8.webp" alt="" class="home-product-item__place--pic">
+                                </div>
+                                <div class="home-product-item__place--dedail">
+                                    <p class="home-product-item__place--text">Thị xã Sơn Tây</p>
+                                    <p class="home-product-item__place--subtext">4,5 giờ lái xe</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="home-product-item">
+                    <h3 class="home-product-item__heading">Ở bất cứ đâu</h3>
+                    <p class="home-product-item__text"></p>
+                    <div class="home-product-item__body row">
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__everywhere--link">
+
+                                <div class="home-product-item__everywhere--img">
+                                    <img src="./assets/img/everywhere-item-1.webp" alt="" class="home-product-item__everywhere--pic">
+                                </div>
+                                <div class="home-product-item__everywhere--dedail">
+                                    <p class="home-product-item__everywhere--text">Nơi nghỉ dưỡng ngoài trời</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__everywhere--link">
+
+                                <div class="home-product-item__everywhere--img">
+                                    <img src="./assets/img/everywhere-item-2.webp" alt="" class="home-product-item__everywhere--pic">
+                                </div>
+                                <div class="home-product-item__everywhere--dedail">
+                                    <p class="home-product-item__everywhere--text">Chỗ ở độc đáo</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__everywhere--link">
+
+                                <div class="home-product-item__everywhere--img">
+                                    <img src="./assets/img/everywhere-item-3.webp" alt="" class="home-product-item__everywhere--pic">
+                                </div>
+                                <div class="home-product-item__everywhere--dedail">
+                                    <p class="home-product-item__everywhere--text">Toàn bộ nhà</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col c-3 home-product-item__place">
+                            <a href="" class="home-product-item__everywhere--link">
+
+                                <div class="home-product-item__everywhere--img">
+                                    <img src="./assets/img/everywhere-item-4.webp" alt="" class="home-product-item__everywhere--pic">
+                                </div>
+                                <div class="home-product-item__everywhere--dedail">
+                                    <p class="home-product-item__everywhere--text">Cho phép mang theo thú cưng</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="home-product-item">
+                    <h3 class="home-product-item__heading"></h3>
+                    <p class="home-product-item__text"></p>
+                    <div class="home-product-item__body row ">
+                        <div class="col c-12 home-product-item__place">
+                            <a href="" class="home-product-item__everywhere--link nature-beatiful-background">
+
+                                <div class="home-product-item__nature-beatiful--img">
+                                    <img src="./assets/img/nature-beautiful-background.webp" alt="" class="home-product-item__nature-beatiful--pic">
+                                </div>
+                                <div class="home-product-item__nature-beatiful--dedail">
+                                    <h3 class="home-product-item__nature-beatiful--title">Thiên nhiên tươi đẹp</h3>
+                                    <p class="home-product-item__nature-beatiful--text">Danh sách Yêu thích do Airbnb tuyển chọn.</p>
+                                    <button class="btn home-product-item__nature-beatiful--btn">Lấy cảm
+                                            hứng</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-product-item">
+                    <h3 class="home-product-item__heading">Khám phá Trải nghiệm</h3>
+                    <p class="home-product-item__text">Các hoạt động độc đáo với các chuyên gia địa phương – tham gia trực tiếp hoặc trực tuyến.</p>
+
+                    <div class="home-product-item__body row">
+                        <div class="col c-4 home-product-item__place">
+                            <a href="" class="home-product-item__everywhere--link">
+
+                                <div class="home-product-item__explore--img">
+                                    <img src="./assets/img/eplore-item-2.webp" alt="" class="home-product-item__explore--pic">
+                                </div>
+                                <div class="home-product-item__everywhere--dedail">
+                                    <p class="home-product-item__everywhere--text">Bộ sưu tập nổi bật: Phiêu du</p>
+                                    <p class="home-product-item__explore--subtext">Du lịch tại nhà với Trải nghiệm trực tuyến.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col c-4 home-product-item__place">
+                            <a href="" class="home-product-item__everywhere--link">
+
+                                <div class="home-product-item__explore--img">
+                                    <img src="./assets/img/eplore-item-3.webp" alt="" class="home-product-item__explore--pic">
+                                </div>
+                                <div class="home-product-item__everywhere--dedail">
+                                    <p class="home-product-item__everywhere--text">Trải nghiệm trực tuyến</p>
+                                    <p class="home-product-item__explore--subtext">Các hoạt động tương tác, truyền trực tiếp dưới sự dẫn dắt của Người tổ chức.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col c-4 home-product-item__place">
+                            <a href="" class="home-product-item__everywhere--link">
+
+                                <div class="home-product-item__explore--img">
+                                    <img src="./assets/img/eplore-item-1.webp" alt="" class="home-product-item__explore--pic">
+                                </div>
+                                <div class="home-product-item__everywhere--dedail">
+                                    <p class="home-product-item__everywhere--text">Trải nghiệm</p>
+                                    <p class="home-product-item__explore--subtext">Những điều nên trải nghiệm của địa phương, dù bạn đang ở bất cứ đâu.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="home-product-item">
+                    <h3 class="home-product-item__heading"></h3>
+                    <p class="home-product-item__text"></p>
+                    <div class="home-product-item__body row ">
+                        <div class="col c-12 home-product-item__place">
+                            <a href="" class="home-product-item__everywhere--link nature-beatiful-background">
+
+                                <div class="home-product-item__nature-beatiful--img">
+                                    <img src="./assets/img/reception-img.webp" alt="" class="home-product-item__nature-beatiful--pic">
+                                </div>
+                                <div class="home-product-item__nature-beatiful--dedail ">
+                                    <h3 class="home-product-item__nature-beatiful--title reception-item__text">Hãy thử đón tiếp khách</h3>
+                                    <p class="home-product-item__nature-beatiful--text reception-item__text">Kiếm thêm thu nhập và khám phá các cơ hội mới bằng cách chia sẻ nơi ở của bạn.
+                                    </p>
+                                    <button class="btn home-product-item__nature-beatiful--btn reception-item__btn">Lấy
+                                            cảm hứng</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- model -->
+        <div class="modal">
+            <!-- choice your  -->
+            <div class="modal__overlay">
+            </div>
+            <div class="modal__body">
+                <div class="country-select">
+                    <div class="modal__close">
+                        <div class=" btn  ">
+                            <i class="modal__close-btn ti-close"></i>
+                        </div>
+                    </div>
+
+                    <div class="country-select-item">
+                        <div class="btn country-select-item--btn country-select-item--btn-active">Ngôn ngữ và khu vực
+                        </div>
+                        <div class="btn country-select-item--btn ">Loại tiền tệ</div>
+
+                    </div>
+
+                    <div class="country-select__option country-select__currency">
+                        <div class="country-select__item">
+                            <h3 class="country-select__heading">Chọn loại tiền tệ</h3>
+                            <ul class="country-select__body">
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link country-select__item--link--active">
+                                        <span class="country-select__item-title">Đô la Mỹ</span>
+                                        <span class="country-select__item-body">USD - $</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">Euro</span>
+                                        <span class="country-select__item-body">EUR - €</span>
+                                    </a>
+                                </li>
+
+                        </div>
+                    </div>
+                    <div class="country-select__option country-select__language">
+                        <div class="country-select__item">
+                            <h3 class="country-select__heading">Ngôn ngữ và khu vực được đề xuất</h3>
+                            <ul class="country-select__body">
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="country-select__item">
+                            <h3 class="country-select__heading">Chọn ngôn ngữ và khu vực</h3>
+                            <ul class="country-select__body">
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link country-select__item--link--active">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+                                <li class="country-select__item--selected">
+                                    <a href="" class="country-select__item--link">
+                                        <span class="country-select__item-title">English</span>
+                                        <span class="country-select__item-body">United States</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- register &  login-->
+                <div class="register-login">
+                    <div class="register-login__heading">
+                        <div class=" btn  ">
+                            <i style="font-size: 1.4rem;" class="modal__close-btn ti-close"></i>
+                        </div>
+                        <h3 class="register-login__title">Đăng nhập hoặc đăng ký</h3>
+                    </div>
+                    <div class="register-login__body">
+                        <div class="register-by-phone">
+                            <h4 class="register-by-phone__heading">Chào mừng bạn đến với Airbnb</h4>
+                            <div class="register-by-phone__body">
+                                <div class="register-by-phone__item">
+                                    <span class="register-by-phone__religion">
+                                            Quốc gia/Khu vực
+                                        </span>
+                                    <select class="register-by-phone__religion--prefix">
+                                            <div style="max-height: 100px; overflow: auto;">
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+83)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+83)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+83)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                                <option class="register-by-phone__religion--prefix-item">Việt Nam (+84)
+                                                </option>
+                                            </div>
+                                        </select>
+                                </div>
+                                <div class="register-by-phone__item">
+                                    <div class="register-by-phone__phonenum">
+                                        <div class="register-by-phone__item--placehowder">Số điện thoại</div>
+                                        <div class="register-by-phone__phonenum--prefix">+84</div>
+                                    </div>
+                                    <div style="display:flex">
+                                        <input type="tel" name="PhoneNumber" id="" class="register-by-phone__full--phonenum">
+                                    </div>
+                                </div>
+                                <p class="register-privacy">Chúng tôi sẽ gọi điện hoặc nhắn tin cho bạn để xác nhận số điện thoại. Có áp dụng phí dữ liệu và phí tin nhắn tiêu chuẩn.</p>
+                                <button class="btn btn-register-by-phone__finish"><a href=""
+                                            class="btn-register-by-phone__finish--link">Tiếp tục</a></button>
+                            </div>
+                        </div>
+                        <div class="register-by-another">
+                            <div class="register-by-another__seprator">
+                                <span class="register-by-another__seprator--text">hoặc</span>
+                            </div>
+                            <div class="register-ny-another__block">
+                                <button class="register-by-another__item">
+                                        <a href="" class="register-by-another__link">
+                                            <i class="register-by-another__icon fab fa-facebook"></i>
+                                            <span class="register-by-another__text">Tiếp tục với Facebook</span>
+                                        </a>
+                                    </button>
+                            </div>
+                            <div class="register-ny-another__block">
+                                <button class="register-by-another__item">
+                                        <a href="" class="register-by-another__link">
+                                            <img class="register-by-another__icon" src="assets/img/icongoogle.png">
+                                            <span class="register-by-another__text">Tiếp tục với Google</span>
+                                        </a>
+                                    </button>
+                            </div>
+                            <div class="register-ny-another__block">
+                                <button class="register-by-another__item">
+                                        <a href="" class="register-by-another__link">
+                                            <i class="register-by-another__icon fab fa-apple"></i>
+                                            <span class="register-by-another__text">Tiếp tục với Apple</span>
+                                        </a>
+                                    </button>
+                            </div>
+                            <div class="register-ny-another__block">
+                                <button class="register-by-another__item">
+                                        <a href="" class="register-by-another__link">
+                                            <i class="register-by-another__icon ti-email"></i>
+                                            <span class="register-by-another__text">Tiếp tục với Email</span>
+                                        </a>
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class=" app-footer">
+        <div class="grid wide">
+            <div class="app-footer-padding">
+
+                <div class="row">
+
+                    <div class="col c-3 ">
+                        <div class="app-footer-item">
+
+                            <h3 class="app-footer-item__title">Giới thiệu</h3>
+                            <ul class="app-footer-item__list">
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Phương thức hoạt động của Airbnb</a>
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Trang tin tức</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Nhà đầu tư</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Airbnb Plus</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Airbnb Luxe</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">HotelTonight</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Airbnb for Work</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Nhờ có Host, mọi điều đều có thể</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Cơ hội nghề nghiệp</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+
+                                    <a href="" class="app-footer-item__link">Thư của nhà sáng lập</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col c-3 ">
+                        <div class="app-footer-item">
+
+                            <h3 class="app-footer-item__title">Cộng đồng</h3>
+                            <ul class="app-footer-item__list">
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Sự đa dạng và Cảm giác thân thuộc</a>
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Tiện nghi phù hợp cho người khuyết
+                                            tật</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Đối tác liên kết Airbnb</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Chỗ ở cho tuyến đầu</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Lượt giới thiệu của khách</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Airbnb.org</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col c-3 ">
+                        <div class="app-footer-item">
+
+                            <h3 class="app-footer-item__title">Đón tiếp khách</h3>
+                            <ul class="app-footer-item__list">
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Cho thuê nhà</a>
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Tổ chức Trải nghiệm trực tuyến</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Tổ chức trải nghiệm</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Đón tiếp khách có trách nhiệm</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Trung tâm tài nguyên</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Trung tâm cộng đồng</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col c-3 ">
+                        <div class="app-footer-item">
+
+                            <h3 class="app-footer-item__title">Hỗ trợ</h3>
+                            <ul class="app-footer-item__list">
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Biện pháp ứng phó với đại dịch COVID-19
+                                            của chúng tôi</a>
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Trung tâm trợ giúp</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Các tùy chọn hủy</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Hỗ trợ khu dân cư</a>
+
+                                </li>
+                                <li class="app-footer-item__list-item">
+                                    <a href="" class="app-footer-item__link">Tin cậy và an toàn</a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col c-12 general-privacy">
+
+                        <div class="general-privacy-item">
+                            <span class="general-privacy-item__list">
+                                    <a class="general-privacy-item__link copyright">© 2021 Airbnb, Inc.</a>
+                                </span>
+                            <span class="general-privacy-item__list">
+                                    <a href="" class="general-privacy-item__link">Quyền riêng tư</a>
+                                </span>
+                            <span class="general-privacy-item__list">
+                                    <a href="" class="general-privacy-item__link">Điều khoản</a>
+                                </span>
+                            <span class="general-privacy-item__list">
+                                    <a href="" class="general-privacy-item__link">Sơ đồ trang web</a>
+                                </span>
+                        </div>
+                        <div class="general-privacy-item">
+                            <span class="general-privacy-item__list hidden-list-before">
+                                    <a class="general-privacy-item__link general-privacy-item__setting">
+                                        <span class="general-privacy-item__icon">
+
+                                            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                                aria-hidden="true" role="presentation" focusable="false"
+                                                style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                                <path
+                                                    d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                            <p class="general-privacy-item__text">Tiếng Việt (VN)</p>
+
+                            </a>
+                            </span>
+                            <span class="general-privacy-item__list hidden-list-before">
+
+                                    <a class="general-privacy-item__link general-privacy-item__setting">
+                                        <span style="" class="general-privacy-item__icon">€</span>
+                            <p class="general-privacy-item__text">EUR</p>
+
+                            </a>
+                            </span>
+                            <span class="general-privacy-item__list social-item hidden-list-before">
+                                    <a href="" class="general-privacy-item__link social-item__link"><i
+                                            class="social-item__icon fab fa-facebook-f"></i></a>
+                                    <a href="" class="general-privacy-item__link social-item__link"><i
+                                            class="social-item__icon fab fa-twitter"></i></a>
+                                    <a href="" class="general-privacy-item__link social-item__link social-item__svg">
+                                        <svg viewBox="0 0 24 24" role="img" aria-hidden="false"
+                                            aria-label="Chuyển tới Instagram" focusable="false"
+                                            style="height:18px;width:18px;display:block;fill:currentColor">
+                                            <path
+                                                d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    </div>
+    </div>
+    <!-- <svg width="30" height="32" fill="currentcolor" style="display: block;">
+            <path d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z"></path>
+        </svg> -->
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/location.js"></script>
+
+</body>
+
+</html>
