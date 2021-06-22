@@ -954,6 +954,9 @@
 /* nature-beautiful */
 
 .home-product-item__nature-beatiful--pic {
+    object-fit: cover;
+    object-position: 50% 50%;
+    vertical-align: bottom;
     position: relative;
     width: 100%;
     border-radius: var(--border-radius-16);
