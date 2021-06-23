@@ -306,7 +306,7 @@
         max-width: 25%;
     }
     .l-4 {
-        flex: 0 0 33.33333%;
+        flex: 0 0 calc(33.33333% - 16px);
         max-width: 33.33333%;
     }
     .l-5 {
@@ -471,7 +471,7 @@
         max-width: 91.66667%;
     }
     .wide .l-12 {
-        flex: 0 0 100%;
+        flex: 0 0 calc(100% - 16px);
         max-width: 100%;
     }
     .wide .l-o-1 {
