@@ -11,6 +11,7 @@
 
 /* set header text color, logo color and item color */
 
+.header__logo__tablet--link,
 .header__logo__pc--link,
 .header__subnav-item--link,
 .header__nav-item {
@@ -61,11 +62,12 @@
     width: 102px;
 }
 
+.header__logo__tablet--link,
 .header__logo__pc--link {
     text-decoration: none;
 }
 
-.header__logo__pc {}
+.header__logo {}
 
 
 /* header subnav */
@@ -309,6 +311,7 @@
 }
 
 .header-search__place--checkbox {
+    max-width: 200px;
     border: none !important;
 }
 

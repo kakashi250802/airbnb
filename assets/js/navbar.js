@@ -79,6 +79,11 @@ $(function() {
             $('.header__nav-item').css({
                 "color": "var(--primary-color)"
             });
+
+            $('.header__logo__tablet--link').css({
+                "color": "var(--header-brand-color)"
+
+            });
             $('.header__logo__pc--link').css({
                 "color": "var(--header-brand-color)"
             });
