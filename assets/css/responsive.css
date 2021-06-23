@@ -19,6 +19,15 @@
 /* tablet */
 
 @media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .mb-0-tablet {
+        margin-bottom: 0 !important;
+    }
+    .home-product-item__text {
+        font-size: 2.2rem;
+    }
     .header {
         height: 59.2vh;
     }
@@ -65,9 +74,22 @@
     .app-footer-padding {
         padding: 44px 40px 0;
     }
+    .home-product-item__nature-beatiful--dedail {
+        padding: 0 40px;
+        max-width: 280px;
+    }
+    .home-product-item__nature-beatiful--btn {
+        margin: 18px 0 0;
+    }
     /* .padding-space {
         height: 122px
     } */
+    .home-product-item__nature-beatiful--title {
+        font-size: 3.0rem;
+    }
+    .home-product-item__nature-beatiful--text {
+        font-size: 1.6rem;
+    }
     .header-search__btn--text {
         display: none !important;
     }
@@ -101,6 +123,23 @@
     }
     .app-footer-item__list {
         padding-bottom: 24px;
+    }
+    .general-privacy {
+        margin-top: 0;
+        border-top: none;
+    }
+    .general-privacy {
+        flex-direction: column-reverse;
+    }
+    .general-privacy-item {
+        margin-bottom: 16px;
+    }
+    .general-privacy-item {
+        flex-wrap: wrap;
+    }
+    .copyright__block {
+        text-align: center;
+        width: 100%;
     }
 }
 
