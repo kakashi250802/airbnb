@@ -116,6 +116,18 @@ $(function() {
             $('.header__subnav-item--link').css({
                 "color": "var(--white-color)"
             });
+            $('.header__logo__tablet--link').css({
+                "color": "var(--white-color)"
+
+            });
         }
     });
+});
+$(window).resize(function() {
+    if (window.matchMedia('(max-width: 1023px)').matches) {
+        // functionality for screens smaller than 1200px
+    }
+    if (window.matchMedia('(min-width: 12023px) and (max-width: 1023px)').matches) {
+        // functionality for screens smaller than 1200px
+    }
 });

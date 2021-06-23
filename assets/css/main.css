@@ -62,7 +62,10 @@
     width: 102px;
 }
 
-.header__logo__tablet--link,
+.header__logo__tablet--link {
+    display: none
+}
+
 .header__logo__pc--link {
     text-decoration: none;
 }
