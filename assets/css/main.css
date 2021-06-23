@@ -308,6 +308,16 @@
     color: var(--sub-text-color);
 }
 
+.header-search__place--checkbox {
+    border: none !important;
+}
+
+.header-search__place--checkbox:focus-visible {
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+}
+
 .header-search__btn {
     padding: 0px 12px;
     display: flex;
