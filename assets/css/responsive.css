@@ -193,11 +193,13 @@
         font-size: 2.2rem;
     }
     .home-product-item {
-        padding: 20px 24px
+        padding: 20px 24px;
+        overflow: hidden;
     }
     .home-product-item__nature-beatiful--dedail {
         padding: 0;
         text-align: center;
+        top: 24%;
     }
     .home-product-item__nature-beatiful--pic {
         display: none;
@@ -217,5 +219,29 @@
     }
     .home-product-item__nature-beatiful--text {
         font-size: 1.6rem;
+    }
+    .home-product-item__text {
+        font-size: 1.8rem;
+    }
+    .padding-24px {
+        padding: 0 24px;
+    }
+    .scrollbar-y-block {
+        padding: 0px 28px;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
+    .scrollbar-y-block::-webkit-scrollbar {
+        display: none;
+    }
+    .pad-0-mobile {
+        padding: 0;
+    }
+    .reception-item__text {
+        max-width: 306px;
+        margin: 0 auto;
+    }
+    .home-product-item__nature-beatiful--btn {
+        margin: 18px 0 0;
     }
 }
