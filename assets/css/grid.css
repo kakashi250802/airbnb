@@ -56,12 +56,12 @@
 }
 
 .c-5 {
-    flex: 0 0 41.66667%;
+    flex: 0 0 calc(41.66667% - 16px);
     max-width: 41.66667%;
 }
 
 .c-6 {
-    flex: 0 0 50%;
+    flex: 0 0 calc(50% - 16px);
     max-width: 50%;
 }
 
@@ -338,7 +338,7 @@
         max-width: 91.66667%;
     }
     .l-12 {
-        flex: 0 0 100%;
+        flex: 0 0 calc(100% - 16px);
         max-width: 100%;
     }
     .l-o-1 {
