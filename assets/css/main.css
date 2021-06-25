@@ -58,10 +58,9 @@
 
 /* search */
 
-
-/* .mobile-search {
+.mobile-navbar {
     display: none;
-} */
+}
 
 
 /* logo */
@@ -986,6 +985,10 @@
     border-radius: var(--border-radius-16);
     max-height: 482px;
     height: 100%;
+}
+
+.home-product-item__nature-beatiful--pic-mobile {
+    display: none;
 }
 
 
