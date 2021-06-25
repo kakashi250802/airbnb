@@ -42,6 +42,7 @@ $(document).ready(function() {
             "display": "none"
         });
     });
+
     $('.header-subsearch').click(function(event) {
         $('.header-subsearch').css({
             "display": "none"
@@ -54,16 +55,57 @@ $(document).ready(function() {
             "padding-bottom": "82px",
         });
     });
+    $('.mobile-search').click(function(event) {
+
+        $('.mobile-search__close').css({
+            "display": "flex"
+        });
+        $('.header-search__location-mobile').css({
+            "display": "block",
+            "box-shadow": "none"
+
+        });
+        $('.mobile-navbar').css({
+            "background": "var(--white-color)"
+
+        });
+        $('.padding-space').css({
+            "box-shadow": "none"
+        });
+    });
+    $('.mobile-search__close').click(function(event) {
+
+        $('.mobile-search__close').css({
+            "display": "none"
+        });
+        $('.header-search__location-mobile').css({
+            "display": "none",
+            "box-shadow": "none"
+
+        });
+        $('.mobile-navbar').css({
+            "background": "none"
+
+        });
+        $('.padding-space').css({
+            "box-shadow": "0px -5px 32px -16px var(--shadow-color)"
+        });
+    });
 
 });
+
 $(function() {
     $(window).scroll(function(event) {
         var pos_body = $('html,body').scrollTop();
-        console.log(pos_body);
+        // console.log(pos_body);
         if (pos_body > 100) {
             $('.header__subnav').css({
                 "display": "none"
             });
+            $('.mobile-search').css({
+                "box-shadow": "0 0 32px -17px var(--shadow-color)"
+            });
+
             $('.header-subsearch').css({
                 "display": "flex"
             });
@@ -122,12 +164,20 @@ $(function() {
             });
         }
     });
+
 });
-$(window).resize(function() {
-    if (window.matchMedia('(max-width: 1023px)').matches) {
-        // functionality for screens smaller than 1200px
-    }
-    if (window.matchMedia('(min-width: 12023px) and (max-width: 1023px)').matches) {
-        // functionality for screens smaller than 1200px
-    }
-});
+// $(window).resize(function() {
+
+//     var width = $(window).width();
+//     console.log(width);
+//     if (width < 740) {
+//         if (pos_body > 100) {
+//             $('.padding-space').css({
+//                 "display": "none !important",
+//             });
+//         }
+//         // $('.left, .right').addClass('responsive_768');
+//     } else {
+//         // $('.left, .right').removeClass('responsive_768');
+//     }
+// });
