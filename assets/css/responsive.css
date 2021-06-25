@@ -296,6 +296,12 @@
         margin-top: 16px;
         color: var(--primary-color);
         margin-left: 12px;
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 5b820799663e4e4a041c856e33789869c1c5da97
     }
     .mobile-menu-bar {
         border: 1px solid var(--border-color);
@@ -331,6 +337,7 @@
     }
     .mobile-menu-bar__item--active .mobile-menu-bar__text {
         color: var(--primary-color);
+
     }
     .mb-38px-mobile {
         margin-bottom: 38px !important;
