@@ -302,6 +302,7 @@
         margin-left: 12px;
 
 
+
     }
     .mobile-menu-bar {
         border: 1px solid var(--border-color);
@@ -337,5 +338,6 @@
     }
     .mobile-menu-bar__item--active .mobile-menu-bar__text {
         color: var(--primary-color);
+
     }
 }
