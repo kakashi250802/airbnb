@@ -1594,3 +1594,7 @@
     border: 4px double var(--primary-color);
     /* outline: var(--primary-color) double 4px; */
 }
+
+.mobile-menu-bar {
+    display: none;
+}
